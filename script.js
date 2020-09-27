@@ -35,6 +35,16 @@ searchButton.addEventListener('keydown',(e)=>{
  }    
  );
 
+ searchButton.addEventListener('click',(e)=>{
+   
+     if(inputSearch.value)   
+     showWeather(inputSearch.value);
+     else
+     inputSearch.placeholder='Type City Name'
+    
+ }    
+ );
+
 
  function showWeather(city_name)
  {
